@@ -3,61 +3,46 @@ body {
 }
 
 .container {
-    background-color: darkslateblue;
-    height: 100%;
     width: 100%;
-    border-radius: 3%;
+    height: 100%;
+    background-color: blueviolet;
+    display: flex;
 }
 
 .left-bar {
-    background-color:darkslategray;
-    width: 25%;
+     width: 17%;
     height: 100%;
-    border-radius: 3%;
-    float: left;
+    background-color: aqua;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }
 
 .profile-pic {
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    
 }
 
-.app-align-right{
-    margin-left: 30px;
-}
-
-.app-bold{
-    font-weight: bold;
+.figure {
+    background-color: aquamarine;
+    margin: 3px;
 }
 
 .row {
     display: flex;
-    margin: 20px;
+    margin: 15px;
+   
+   
 }
 
-.present-bar{
-    display: flex;
-    height:300px;
-    width: 850px;
-    border-radius: 3%;
-    background-color: cadetblue;
-    margin-left:100px;
-    top: 30px;
+.bold {
+    font-weight: bold;
 }
 
-.app-padding-20{
-    padding: 20px
-}
-
-.app-card {
-    height: 150px;
-    width: 300px;
-    background-color: darkseagreen;
-    border-radius: 3%;
-    margin-left: 50px;
-    margin-top: 50px;
-    bottom: 30px;
+.align-right {
+    width: 100%;
+    text-align: right;
 }
