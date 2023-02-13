@@ -34,15 +34,103 @@ body {
 .row {
     display: flex;
     margin: 15px;
-   
-   
+    
 }
 
 .bold {
     font-weight: bold;
+    margin-left: 25px;
 }
 
 .align-right {
     width: 100%;
     text-align: right;
+    margin-right: 25px;
 }
+
+.lang-progression {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+
+.circular-progress-italian {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(248, 143, 5) 360deg,white 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress-english {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(248, 143, 5) 300deg,white 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress-spagnol {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background: conic-gradient(rgb(248, 143, 5) 60deg,white 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress-italian::before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(61, 63, 88);
+    border-radius: 50%;
+}
+
+.circular-progress-english::before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(61, 63, 88);
+    border-radius: 50%;
+}
+
+.circular-progress-spagnol::before {
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(61, 63, 88);
+    border-radius: 50%;
+}
+
+
+
+.progress-value {
+    position: relative;
+    color: aliceblue;
+    font-size: 10px;
+    
+}
+
+.lang-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
