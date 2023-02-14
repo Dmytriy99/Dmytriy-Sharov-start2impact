@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(16, 14, 22);
 }
 
 .container {
@@ -10,9 +10,9 @@ body {
 }
 
 .left-bar {
-     width: 17%;
+    width: 17%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgb(41, 40, 54);
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -27,8 +27,10 @@ body {
 }
 
 .figure {
-    background-color: aquamarine;
+    background-color: rgb(57, 52, 66);
     margin: 3px;
+    color: azure;
+    font-size: small;
 }
 
 .row {
@@ -40,12 +42,14 @@ body {
 .bold {
     font-weight: bold;
     margin-left: 25px;
+    color: aliceblue;
 }
 
 .align-right {
     width: 100%;
     text-align: right;
     margin-right: 25px;
+    color: aliceblue;
 }
 
 .lang-progression {
@@ -53,8 +57,8 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: space-around;
-    
-    
+    color: aliceblue;
+    row-gap: 20px;
 }
 
 .circular-progress-italian {
@@ -134,3 +138,36 @@ body {
     margin-bottom: 18px;
 }
 
+.progress-bar {
+    width: 210px;
+    height: 18px;
+    background-color: gray;
+    border-radius: 7px;
+    flex-direction: row;
+    display: flex;
+}
+
+.progress-fill {
+    width: 70%;
+    height: 100%;
+    background-color: orange;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 7px;
+}    
+
+.progress-bar-html {
+    display: flex;
+    width: 100%;
+    margin: 18px;
+}
+
+.progress-text {
+    width: 25%;
+    text-align: right;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 15px;
+}
