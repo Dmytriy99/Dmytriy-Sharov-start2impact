@@ -244,4 +244,50 @@ section {
     height: 70px;
     width: 100%;
     background-color: rgb(57, 52, 66);
+    display: flex;
+    align-items: center;
 }
+
+.fa {
+    padding: 20px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+  }
+  
+  /* Twitter */
+  .fa-instagram {
+    background: #e417a6;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .fa-github {
+    background: #171618;
+    color: white;
+    border-radius: 50%;
+  }
+
+  .fa-twitch {
+    background: #7709df;
+    color: rgb(238, 232, 238);
+    border-radius: 50%;
+  }
+
+
+
+  
