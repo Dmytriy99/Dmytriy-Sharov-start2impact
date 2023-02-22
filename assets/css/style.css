@@ -1,7 +1,8 @@
 body {
     background-color: rgb(16, 14, 22);
-    display: flex;
-    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
 }
 
 .left-bar {
-    width: 17%;
+    width: 22%;
     height: 100%;
     background-color: rgb(41, 40, 54);
     display: flex;
@@ -141,12 +142,13 @@ body {
 }
 
 .progress-bar {
-    width: 210px;
+    width: 230px;
     height: 18px;
     background-color: gray;
     border-radius: 7px;
     flex-direction: row;
     display: flex;
+    margin-left: 25px;
 }
 
 .progress-fill {
@@ -173,6 +175,7 @@ body {
     color: aliceblue;
     font-weight: bold;
     font-size: 15px;
+    margin-right: 5px;
 }
 
 header {
@@ -186,8 +189,7 @@ header {
 
 .present-bar {
     width: 95%;
-    height: 450px;
-    background-color: brown;
+    height: 30%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -200,9 +202,8 @@ header {
 
 .present-pick {
     border-radius: 35%;
-    height: 450px;
     width: 350px;
-    margin-top: 3px;
+    margin: 1px solid;
 }
 
 .present-figure {
@@ -212,24 +213,26 @@ header {
 
 .present-desr {
     font-weight: bolder;
-    font-size: 60px;
-    margin-left: 200px;
+    font-size: 65px;
+    width: 80%;
     color: rgb(224, 224, 226);
+    
 }
 
 .row-bio {
     display: flex;
     margin-top: 50px;
     width: 90%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .bio {
     width: 400px;
-    height: 285px;
+    height: auto;
     background-color: rgb(57, 52, 66);
     text-align: center;
-    
+    margin: 5px;
+    font-family: 'Shantell Sans';
 }
 
 h2 {
@@ -245,10 +248,12 @@ p {
 
 section {
     height: 70px;
-    width: 100%;
+    width: auto;
     background-color: rgb(57, 52, 66);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
 }
 
 .fa {
@@ -257,54 +262,189 @@ section {
     height: 15px;
     text-align: center;
     text-decoration: none;
-    margin-left: 20px;
-  }
+}
   
   .fa:hover {
     opacity: 0.7;
-  }
+}
   
   .fa-facebook {
     background: #3B5998;
     color: white;
     border-radius: 50%;
-  }
+}
   
   .fa-instagram {
     background: #e417a6;
     color: white;
     border-radius: 50%;
-  }
+}
 
   .fa-github {
     background: #171618;
     color: white;
     border-radius: 50%;
-  }
+}
 
   .fa-twitch {
     background: #7709df;
     color: rgb(238, 232, 238);
     border-radius: 50%;
-  }
+}
+
+.button:link,                 /* Change this */
+.button:visited {             /* Change this */
+  display: block;             /* Add this */
+  text-decoration: none;      /* Add this */
+  font-size: 20px;
+  color: #e4cf18;                /* The rest is the same */
+  background-color: rgb(29, 29, 36);
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 80%;
+  margin: 12px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: rgb(42, 42, 53);
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: rgb(29, 29, 36);
+}
 
   @media only screen and (max-width: 450px) {
     body {
         background-color: #e417a6;
     }
-  }
+     .container,
+     .left-bar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
 
-  @media only screen and (min-width: 451px) and (max-width: 960px) {
+     header {
+        width: 100%;
+     }
+     .present-bar {
+        width: 98%;
+        text-align: center;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      
+     }
+    
+     .present-desr {
+        font-size: 22px;
+        width: 100%;
+     }
+     
+     .present-figure {
+        width: 100%;
+        text-align: center;
+     }
+     .present-pick {
+        width: 155px;
+     }
+
+     .row-bio {
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     .bio {
+        margin-top: 10px;
+        height: auto;
+     }
+
+     .progress-bar {
+        margin-left: 20px;
+    }
+}
+  
+
+  @media only screen and (min-width: 451px) and (max-width: 1000px) {
     body {
         background-color: aqua;
     }
-  }
+    .container,
+     .left-bar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+     }
 
-  @media only screen and (min-width: 961px) {
+     header {
+        width: 100%;
+     }
+     .present-bar {
+        width: 100%;
+        height: 420px;
+        text-align: center;
+        justify-content: center;
+     }
+    
+     .present-desr {
+        font-size: 40px;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+     }
+     
+     .present-pick {
+        width: 200px;
+        border-radius: 40%;
+     }
+
+     .row-bio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+
+     .bio {
+        margin-top: 10px;
+        height: auto;
+        margin: 5px;
+     }
+
+     .progress-bar {
+        margin-left: 30px;
+        width: 55%;
+    }
+
+    .progress-text {
+        width: 36%;
+    }
+}
+
+
+  @media only screen and (min-width: 1000px) {
     body {
         background-color: rgb(16, 14, 22);
     }
-  }
+
+    .row-bio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+ 
 
 
 
