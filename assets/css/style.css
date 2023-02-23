@@ -19,6 +19,7 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-left: 5px;
 }
 
 .profile-pic {
@@ -26,7 +27,7 @@ body {
     width: 150px;
     height: 150px;
     margin-top: 20px;
-    
+    object-fit: cover;
 }
 
 .figure {
@@ -62,6 +63,14 @@ body {
     justify-content: space-around;
     color: aliceblue;
     row-gap: 20px;
+    transition: 1.2s ease;
+    -webkit-transition: 1.2s ease;
+}
+
+.lang-progression:hover {
+    transform : scale(1.3);
+    -webkit-transform : scale(1.2);
+    border-radius: 10%;
 }
 
 .circular-progress-italian {
@@ -149,6 +158,13 @@ body {
     flex-direction: row;
     display: flex;
     margin-left: 25px;
+    transition: 1.2s ease;
+    -webkit-transition: 1.2s ease;
+}
+
+.progress-bar:hover {
+    transform : scale(1.3);
+    -webkit-transform : scale(1.2);
 }
 
 .progress-fill {
@@ -231,8 +247,16 @@ header {
     height: auto;
     background-color: rgb(57, 52, 66);
     text-align: center;
-    margin: 5px;
+    margin: 20px;
     font-family: 'Shantell Sans';
+    transition: 1.2s ease;
+    -webkit-transition: 1.2s ease;
+}
+
+.bio:hover {
+    transform : scale(1.3);
+    -webkit-transform : scale(1.1);
+    border-radius: 10%;
 }
 
 h2 {
@@ -254,6 +278,13 @@ section {
     align-items: center;
     justify-content: space-around;
     margin-top: 10px;
+    transition: 1.2s ease;
+    -webkit-transition: 1.2s ease;
+}
+
+section:hover {
+    transform : scale(1.3);
+    -webkit-transform : scale(1.05);
 }
 
 .fa {
@@ -292,27 +323,30 @@ section {
     border-radius: 50%;
 }
 
-.button:link,                 /* Change this */
-.button:visited {             /* Change this */
-  display: block;             /* Add this */
-  text-decoration: none;      /* Add this */
+.button:link,                
+.button:visited {             
+  display: block;             
+  text-decoration: none;      
   font-size: 20px;
-  color: #e4cf18;                /* The rest is the same */
+  color: #e4cf18;                
   background-color: rgb(29, 29, 36);
   font-weight: bold;
   padding: 20px;
   text-align: center;
   border: 2px solid #5D6063;
   border-radius: 5px;
-
   width: 80%;
   margin: 12px auto;
+  transition: 1.2s ease;
+  -webkit-transition: 1.2s ease;
 }
 
 .button:hover,
 .button:visited:hover {
   color: #FFF;
   background-color: rgb(42, 42, 53);
+  transform : scale(1.3);
+  -webkit-transform : scale(1.05);
 }
 
 .button:active,
@@ -323,7 +357,7 @@ section {
 
   @media only screen and (max-width: 450px) {
     body {
-        background-color: #e417a6;
+        background-color: rgb(29, 29, 36);
     }
      .container,
      .left-bar {
@@ -377,7 +411,7 @@ section {
 
   @media only screen and (min-width: 451px) and (max-width: 1000px) {
     body {
-        background-color: aqua;
+        background-color: rgb(29, 29, 36);
     }
     .container,
      .left-bar {
@@ -422,12 +456,12 @@ section {
      }
 
      .progress-bar {
-        margin-left: 30px;
+        margin-left: 50px;
         width: 55%;
     }
 
     .progress-text {
-        width: 36%;
+        width: 34%;
     }
 }
 
