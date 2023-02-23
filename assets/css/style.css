@@ -17,6 +17,8 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
+    margin-top: 5px;
+    margin-left: 5px;
 }
 
 .profile-pic {
@@ -61,8 +63,8 @@ body {
     row-gap: 20px;
     transition: 1.2s ease;
     -webkit-transition: 1.2s ease;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .lang-progression:hover {
