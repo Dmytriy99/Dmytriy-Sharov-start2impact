@@ -1,7 +1,5 @@
 body {
     background-color: rgb(16, 14, 22);
-    width: auto;
-    height: auto;
     font-family: "Helvetica", "Arial", sans-serif;
 }
 
@@ -17,9 +15,9 @@ body {
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin-top: 10px;
 }
+
 
 .profile-pic {
     border-radius: 50%;
@@ -468,7 +466,7 @@ section:hover {
 }
 
 
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 1281px) {
     body {
         background-color: rgb(16, 14, 22);
     }
@@ -477,6 +475,11 @@ section:hover {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .left-bar {
+        position: sticky;
+        top: 10px;
     }
 }
 
