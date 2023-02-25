@@ -21,7 +21,7 @@
     background-color: rgb(57, 52, 66);
     border: 1px solid #464a4e;
     border-radius: 3px;
-    width: 80%;
+    width: 90%;
     margin: 40px 0;
     padding: 50px;
   }
@@ -36,8 +36,8 @@
     background-color: rgb(57, 52, 66);
     border: 1px solid #474b50;
     border-radius: 3px;
-    width: 80%;
-    padding: 50px;
+    width: 90%;
+    padding: 30px;
     margin: 0 0 40px 0;
   }
 
@@ -71,7 +71,7 @@
     border-radius: 3px;
     min-height: 200px;
     margin-bottom: 10px;
-    padding: 7px;
+    padding: 2px;
     resize: none;
     background-color: #dadddf;
   }
@@ -101,10 +101,11 @@
   }
 
 
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 600px) {
     .speaker-form-header,
     .speaker-form {
       width: 600px;
+      padding: 50px;
     }
     .form-row {
       flex-direction: row;
